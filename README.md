@@ -100,7 +100,7 @@ This is an open-source project welcoming collaboration.
   * **Consultants / Auditors:** We actively encourage experts in security, cryptography, user experience, and privacy law to review our design, architecture, and implementation. Please use the `security` or `design` issue templates or reach out directly.
   *   **Note:** We can additionally or primarily make a separate markdown document (contributor-applications.md) so interested folks can submit applications via a merge request.
 
-**Code of Conduct:** We enforce a strict **Code of Conduct** ([CODE\_OF\_CONDUCT.md](https://www.google.com/search?q=./CODE_OF_CONDUCT.md)) to ensure a respectful, welcoming, and productive environment for everyone. Intolerance or harassment will not be permitted.
+**Code of Conduct:** We enforce a strict **Code of Conduct** ([CODE\_OF\_CONDUCT.md](CODE_OF_CONDUCT.md)) to ensure a respectful, welcoming, and productive environment for everyone. Intolerance or harassment will not be permitted.
 
 -----
 
@@ -132,7 +132,7 @@ We appreciate all contributions\! Here’s how to get involved:
   * `help-wanted`: Tasks needing contributor assistance.
   * `feature-request`: Proposing new functionality.
   * `bug`: Reporting errors or unexpected behavior.
-  * `security`: **Responsible disclosure** of security vulnerabilities (see SECURITY.md for process).
+  * `security`: **Responsible disclosure** of security vulnerabilities (see [SECURITY.md](SECURITY.md) for process).
   * `design`: Discussions related to UI/UX or architectural choices.
 
 -----
