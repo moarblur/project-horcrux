@@ -16,4 +16,3 @@ These instructions govern agent behavior for this project.
 - Use clear commit messages summarizing the change.
 - Never push commits and PRs to ``main``.
 - Use ``dev/[agent-name]`` instead. E.g, dev/codex for Codex, dev/copilot for GitHub Copilot, etc.
-- 

@@ -38,3 +38,39 @@ Horcruxes use zero‑knowledge encryption as described in the project README. Cl
 ## Optional Extensions
 - **IPFS Storage** – store encrypted payloads on IPFS while keeping metadata on the server.
 - **Blockchain Anchoring** – timestamp metadata hashes on a public blockchain for tamper evidence.
+### Data Format
+Horcrux records are typically exchanged as JSON documents.
+Below is a minimal example:
+
+```json
+{
+  "id": "4f2b1b7e-9c29-4f3b-a0c4-7acd89c3d2d0",
+  "title": "Example",
+  "ciphertext": "<hex string>",
+  "salt": "<hex>",
+  "created_at": "2025-06-07T00:00:00Z",
+  "updated_at": "2025-06-07T00:00:00Z",
+  "recipients": ["user@example.com"],
+  "tags": ["demo"]
+}
+```
+The `ciphertext` field contains the nonce and encrypted data returned by the
+client-side encryption routine. The `salt` is used to derive the encryption key.
+
+### Storage Considerations
+Payloads may be stored directly in a database along with their metadata or
+placed on a decentralized storage network such as IPFS. When using a blockchain
+for anchoring, only the hash of the metadata should be placed on-chain due to
+block size limitations.
+
+### API Overview
+Implementations should expose REST endpoints for creating, retrieving and
+revoking Horcruxes. Endpoints are intentionally simple:
+
+```
+POST /api/horcrux      -> create new Horcrux
+GET  /api/horcrux/{id} -> fetch encrypted payload and metadata
+POST /api/horcrux/{id}/revoke -> invalidate sharing links
+```
+Authentication mechanisms are left to the implementation but should always use
+TLS to protect requests in transit.
