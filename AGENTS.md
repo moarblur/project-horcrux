@@ -12,5 +12,8 @@ These instructions govern agent behavior for this project.
 - Keep AI and LLM related materials in `/ai`.
 - EchoVault specific assets and files reside in `/echovault`.
 
-## Commits
+## Commits, PRs, and Branching Strategy
 - Use clear commit messages summarizing the change.
+- Never push commits and PRs to ``main``.
+- Use ``dev/[agent-name]`` instead. E.g, dev/codex for Codex, dev/copilot for GitHub Copilot, etc.
+- 
