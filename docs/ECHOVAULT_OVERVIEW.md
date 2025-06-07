@@ -223,7 +223,7 @@ We appreciate all contributions\! Here’s how to get involved:
 
 ### 📑 License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/moarblur/project-horcrux/blob/main/LICENSE) file for full details. License subject to change in future iterations.
+This project is licensed under the MIT License. See the [LICENSE](../LICENSE) file for full details. License subject to change in future iterations.
 
 -----
 
